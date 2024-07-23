@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Users</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/hover-min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container">
+        <img src="./images/penta logo.png" alt="logo_penta" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item pe-4">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="addUsers">Add Users</a>
+            </li>
+            <li class="nav-item pe-4">
+              <a class="nav-link" href="#">Tasks List</a>
+            </li>
+            <li class="nav-item dropdown pe-4">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Admin Dashboard
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="addUsers.html">Add Users</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Tasks List</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <form class="form-add-user">
+      <h1 class="form-add-user-haeding mb-5 text-center">Add Users</h1>
+      <div class="mb-3">
+        <label for="add_username" class="form-label">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          id="add_username"
+          placeholder="Add Username"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="add_password" class="form-label">Password</label>
+        <input
+          type="text"
+          class="form-control"
+          id="add_password"
+          placeholder="Add Password "
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="formFile" class="form-label">Choose Image</label>
+        <input class="form-control" type="file" id="add_user_image" />
+      </div>
+      <div class="mb-3">
+        <label for="select_type" class="form-label">Choose Type</label>
+        <select
+          class="form-select"
+          aria-label="Default select-type"
+          id="select_type"
+        >
+          <option selected>Add Type</option>
+          <option value="Admin">Admin</option>
+          <option value="Staff">Staff</option>
+          <option value="Doctor">Doctor</option>
+        </select>
+      </div>
+      <button class="add_user_btn btn btn-primary" type="submit">Add</button>
+      <div class="user_added_text text-success">
+        <span>User Added Successfully</span>
+        <span class="user_added_text_close btn btn-danger">x</span>
+      </div>
+    </form>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

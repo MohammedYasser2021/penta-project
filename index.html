@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/hover-min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Penta Pharma Egypt</title>
+  </head>
+  <body>
+    <nav class="login_nav">
+      <div class="container">
+        <div
+          class="nav-content d-flex justify-content-between align-items-center flex-wrap"
+        >
+          <img src="./images/penta logo.png" alt="logo_penta" />
+          <button class="btn btn-primary login_nav_btn">Login</button>
+        </div>
+      </div>
+    </nav>
+    <form class="form_login">
+      <div class="mb-3">
+        <label for="login_username" class="form-label">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          id="login_username"
+          placeholder="Please Enter Your Username"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label"
+          >Password</label
+        >
+        <input
+          type="password"
+          class="form-control"
+          id="login_password"
+          placeholder="Please Enter Your Password"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary login_btn mx-auto">
+        Login
+      </button>
+      <span class="form-close btn btn-danger">x</span>
+      <div class="login-error">Username Or Password Is Wrong</div>
+    </form>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
